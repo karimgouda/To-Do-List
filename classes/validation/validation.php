@@ -3,7 +3,8 @@
 class Validation{
     private $errors = [];
 
-    public function validate($key , $value , $rules){
+    public function validate($key , $value , $rules)
+    {
 
         foreach($rules as $rule){
             $object = new $rule;
@@ -14,7 +15,8 @@ class Validation{
         }
     }
 
-    public function getError(){
+    public function getError()
+    {
         $this->errors;
     }
 }
